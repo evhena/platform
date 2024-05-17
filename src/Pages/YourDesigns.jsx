@@ -5,7 +5,7 @@ import React from 'react';
 export default function YourDesigns() {
   return (
     <div className="page">
-      <h1> Your Designs Page</h1>
+      <h2> Your Designs Page</h2>
       {/* <NavBar /> */}
     </div>
   );
