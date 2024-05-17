@@ -8,11 +8,14 @@ export default defineConfig({
     federation({
       name: 'platform',
       filename: 'remoteEntry.js',
+      remotes: {
+        main_layout: 'http://localhost:5000/assets/remoteEntry.js',
+      },
       exposes: {
-        './Button': './src/Button.jsx',
-        './GraphicsList': './src/Pages/GraphicsList.jsx',
-        './TemplateEditor': './src/Pages/TemplateEditor.jsx',
-        './YourDesigns': './src/Pages/YourDesigns.jsx',
+        './Button': './src/components/Button.jsx',
+        './TemplatesList': './src/pages/TemplatesList.jsx',
+        './TemplateEditor': './src/pages/TemplateEditor.jsx',
+        './YourDesigns': './src/pages/YourDesigns.jsx',
       },
       shared: ['react', 'react-dom'],
     }),
