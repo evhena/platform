@@ -8,9 +8,9 @@ export default defineConfig({
     federation({
       name: 'platform',
       filename: 'remoteEntry.js',
-      remotes: {
-        main_layout: 'http://localhost:5000/assets/remoteEntry.js',
-      },
+      // remotes: {
+      //   main_layout: 'http://localhost:5000/assets/remoteEntry.js',
+      // },
       exposes: {
         './Button': './src/components/Button.jsx',
         './TemplatesList': './src/pages/TemplatesList.jsx',
